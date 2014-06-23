@@ -19,7 +19,7 @@ Here, we fill 33% of the icon (the left 33%) with red, and the rest of the icon 
 
 ## Another Example
 ```
-<i class="example0">&</i>
+<i class="example0">&amp;</i>
 ```
 
 ```
@@ -28,3 +28,6 @@ Here, we fill 33% of the icon (the left 33%) with red, and the rest of the icon 
 }
 ```
 
+Which results in: 
+
+![image](example0.png)
