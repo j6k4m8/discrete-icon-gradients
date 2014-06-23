@@ -1,0 +1,13 @@
+.discrete-gradient(@foreground, @background, @decimal) {
+    .horizontal-background-stop(@foreground; @background; @decimal);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.horizontal-background-stop(@start, @end, @break) {
+    background: -moz-linear-gradient(left, @start 0%, @start (@break) , @end (@break + .1%) , @end 100%);
+    background: -webkit-linear-gradient(left, @start 0%, @start (@break) ,@end (@break + .1%) , @end 100%);
+    background: -o-linear-gradient(left, @start 0%,@start (@break) ,@end (@break + .1%) ,@end 100%);
+    background: -ms-linear-gradient(left, @start 0%,@start (@break) ,@end (@break + .1%) ,@end 100%);
+    background: linear-gradient(to right, @start 0%,@start (@break) ,@end (@break + .1%) ,@end 100%);
+}

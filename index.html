@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/less" href="./dig.less">
+    <style type="text/less">
+
+    body {
+        background-color: white;
+        background-color: rebeccapurple;
+    }
+
+    .container {
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        background: fade(blue, 20%);
+        font-size: 200px;
+        width: 1em;
+        font-weight: bold;
+        font-family: sans-serif;
+        display: inline-block;
+        margin-left: 0.5em;
+    }
+    .container0 {
+        .example0 { .discrete-gradient(red, fade(red, 30%), 10%); }
+        .example1 { .discrete-gradient(red, fade(red, 30%), 30%); }
+        .example2 { .discrete-gradient(red, fade(red, 30%), 50%); }
+        .example3 { .discrete-gradient(red, fade(red, 30%), 70%); }
+    }
+
+    .container1 {
+        .example0 { .discrete-gradient(blue, fade(black, 10%), 10%); }
+        .example1 { .discrete-gradient(blue, fade(black, 30%), 30%); }
+        .example2 { .discrete-gradient(blue, fade(black, 50%), 50%); }
+        .example3 { .discrete-gradient(blue, fade(black, 70%), 70%); }
+    }
+    .container2 {
+        .example0 { .discrete-gradient(blue, fade(blue, 10%), 10%); }
+        .example1 { .discrete-gradient(blue, fade(blue, 30%), 30%); }
+        .example2 { .discrete-gradient(blue, fade(blue, 50%), 50%); }
+        .example3 { .discrete-gradient(blue, fade(blue, 80%), 70%); }
+    }
+
+    </style>
+    <title>Discrete Icon Gradients</title>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
+</head>
+<body>
+    <div class="container container0">
+        <div class="example0">&amp;</div>
+        <div class="example1">&amp;</div>
+        <div class="example2">&amp;</div>
+        <div class="example3">&amp;</div>
+    </div>
+    <div class="container container1">
+        <div class="example0">&amp;</div>
+        <div class="example1">&amp;</div>
+        <div class="example2">&amp;</div>
+        <div class="example3">&amp;</div>
+    </div>
+    <div class="container container2">
+        <div class="example0">&amp;</div>
+        <div class="example1">&amp;</div>
+        <div class="example2">&amp;</div>
+        <div class="example3">&amp;</div>
+    </div>
+</body>
+</html>
