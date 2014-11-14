@@ -5,7 +5,9 @@ Perfect for when you have an icon of signal-bars or such and want to fill some b
 
 
 ##Usage
-Let's say we want to modify this icon to be more colorful:
+Let's say we want to modify this glyphicon to be more colorful:
+
+![image](https://cloud.githubusercontent.com/assets/693511/5049188/a098b1b8-6bf1-11e4-808f-24e97828976c.png)
 
 Simply say, 
 ```
@@ -19,9 +21,11 @@ which translates to:
     -webkit-text-fill-color: transparent;
 }
 ```
+and results in:
+
+![image](https://cloud.githubusercontent.com/assets/693511/5049177/87475ea8-6bf1-11e4-89a8-83fed42aae04.png)
 
 
-Here, we fill 33% of the icon (the left 33%) with red, and the rest of the icon with a red-transparent color.
 
 ## Another Example
 ```
