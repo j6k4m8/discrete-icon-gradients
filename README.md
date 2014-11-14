@@ -9,17 +9,15 @@ Let's say we want to modify this glyphicon to be more colorful:
 
 ![image](https://cloud.githubusercontent.com/assets/693511/5049188/a098b1b8-6bf1-11e4-808f-24e97828976c.png)
 
-Simply say, 
+Simply give it the LESS rule, 
 ```
-.discrete-gradient(red, blue, 30%);
+    .discrete-gradient(red, blue, 30%);
 ```
 which translates to:
 ```
-.glyphicons-th-list {
     background: linear-gradient(to right, red 0%,red 29%,blue 30%,blue 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
 ```
 and results in:
 
