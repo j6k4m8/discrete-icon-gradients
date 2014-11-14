@@ -5,15 +5,21 @@ Perfect for when you have an icon of signal-bars or such and want to fill some b
 
 
 ##Usage
-```
-<div class="two-bars phone-signal-icon"></div>
-```
+Let's say we want to modify this icon to be more colorful:
 
+Simply say, 
 ```
-.two-bars {
-    .discrete-gradient(red, fade(red, 30%), 33%);
+.discrete-gradient(red, blue, 30%);
+```
+which translates to:
+```
+.glyphicons-th-list {
+    background: linear-gradient(to right, red 0%,red 29%,blue 30%,blue 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 ```
+
 
 Here, we fill 33% of the icon (the left 33%) with red, and the rest of the icon with a red-transparent color.
 
